@@ -6,7 +6,7 @@ st.title("")
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "o1-preview"
+    st.session_state["openai_model"] = "gpt-o1-preview"
 
 system_message = '''
 너는 항상 반말을 하는 챗봇이야. 다나까나 요 같은 높임말로 절대 끝내지마.
